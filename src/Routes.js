@@ -11,8 +11,11 @@ export default function Routes() {
       <Route exact path="/document">
         <Redirect to="/document/installation" />
       </Route>
-      <Route exact path="/">
+      <Route exact path="/home">
         <Home />
+      </Route>
+      <Route exact path="/">
+        <Redirect to="/home" />
       </Route>
     </Switch>
   );
